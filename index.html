@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PICK ME</h1>
+        </div>
+        <div class="cart">
+            <button id="cartButton">🛒 Cart (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+    <section class="product-list">
+        <div class="product">
+            <img src="images/product1.jpg" alt="Product 1">
+            <h3>Red Crew Neck T Shirt</h3>
+            <p>$10.00</p>
+            <button class="add-to-cart" data-id="1" data-name="Product 1" data-price="10.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/product2.jpg" alt="Product 2">
+            <h3>Black HRX Running Shoe</h3>
+            <p>$20.00</p>
+            <button class="add-to-cart" data-id="2" data-name="Product 2" data-price="20.00">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/product3.jpg" alt="Product 3">
+            <h3>Grey Slim Fit Joggers</h3>
+            <p>$30.00</p>
+            <button class="add-to-cart" data-id="3" data-name="Product 3" data-price="30.00">Add to Cart</button>
+        </div>
+    </section>
+
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="totalPrice">0.00</span></p>
+            <button id="checkoutButton">Checkout</button>
+            <button id="closeCartButton">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
